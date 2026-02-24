@@ -1,11 +1,5 @@
 # 💬 Real-Time WebSocket Chat Application
 
-## 📌 Repository Title
-
-**real-time-websocket-chat-app**
-
----
-
 ## 🚀 Overview
 
 This project is a real-time chatting application built using **FastAPI**, **WebSockets**, and a simple web frontend. It enables multiple users to connect simultaneously and exchange messages instantly with low latency.
