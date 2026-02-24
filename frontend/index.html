@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telegram Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="tg-app">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="tg-sidebar">
+
+            <div class="tg-sidebar-header">
+                <div class="tg-title">Telegram</div>
+            </div>
+
+            <div class="tg-setup">
+                <input id="username" placeholder="Your username">
+                <input id="receiver" placeholder="Chat with">
+                <button onclick="connect()">Connect</button>
+            </div>
+
+            <!-- Users list (future-ready) -->
+            <div class="tg-users">
+                <div class="tg-user-item active">Chat with User</div>
+                <!-- dynamic users later -->
+            </div>
+
+        </div>
+
+        <!-- CHAT PANEL -->
+        <div class="tg-chat-panel">
+
+            <!-- Header -->
+            <div class="tg-header">
+                <div class="tg-user">
+                    <div class="tg-avatar"></div>
+                    <div>
+                        <div class="tg-name">Telegram</div>
+                        <div id="status" class="tg-status">offline</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div id="chat-box" class="tg-chat-box"></div>
+
+            <!-- Input -->
+            <div class="tg-input">
+                <input id="message" placeholder="Write a message...">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

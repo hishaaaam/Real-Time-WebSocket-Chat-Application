@@ -1,0 +1,110 @@
+/* ================= RESET ================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ================= PAGE ================= */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff, #bfdbfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= APP CONTAINER ================= */
+.tg-app {
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    background: linear-gradient(180deg, #f8fbff, #eaf2ff);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(30, 64, 175, 0.25);
+}
+
+/* ================= SIDEBAR ================= */
+.tg-sidebar {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #1e3a8a, #2563eb);
+    color: white;
+}
+
+.tg-sidebar-header {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+}
+
+/* ================= SETUP (STACKED) ================= */
+.tg-setup {
+    display: flex;
+    flex-direction: column;
+    /* STACK INPUTS */
+    gap: 10px;
+    padding: 14px;
+}
+
+.tg-setup input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.18);
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    outline: none;
+    border-radius: 8px;
+}
+
+.tg-setup input::placeholder {
+    color: #e0e7ff;
+}
+
+.tg-setup button {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 10px;
+    color: #2563eb;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* ================= USERS LIST ================= */
+.tg-users {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.tg-user-item {
+    padding: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tg-user-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.tg-user-item.active {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+/* ================= CHAT PANEL ================= */
+.tg-chat-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #ffffff, #f1f5ff);
+}
+
+/* ===*
